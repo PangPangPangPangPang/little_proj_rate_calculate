@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/excharge/excharge",
+    "pages/list/list"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "极简汇率",
+    "navigationBarTextStyle":"black"
+  }
+}

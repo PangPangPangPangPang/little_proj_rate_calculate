@@ -1,0 +1,21 @@
+<view class='main'>
+    <view id='conttt' class='tm container'>
+        <block wx:for='{{list}}'>
+            <button data-content='{{item}}' class='excharge-cell' bindtap='tap_cell' bindlongtap='longtap_cell'>
+                <image class='item image' src='../../img/{{item.country}}.png' mode='aspectFit' style="width: 50px; height: 50px; background-color: #242f34;"></image>
+                <view class='item'>{{item.country}}</view>
+                <view class='left-item'>
+                    <view class='left-item-first'>
+                        <button class='left-item-first-item'>{{item.charge}}</button>
+                        <button class='left-item-first-item small-font'>{{item.name}}</button>
+                    </view>
+                </view>
+            </button>
+        </block>
+    </view>
+    <view class='calculate'>
+        <block wx:for='{{calculate}}'>
+            <button class='cal_item' bindtap='tap_input' data-value='{{item}}'>{{item}}</button>
+        </block>
+    </view>
+</view>
